@@ -16,3 +16,10 @@
 	"Computer.h"
 	<iostream>
 
+1574780863 source:d:\devt\myshop\src\freezer.cpp
+	"Freezer.h"
+	<iostream>
+
+1574780724 d:\devt\myshop\include\freezer.h
+	<Product.h>
+
