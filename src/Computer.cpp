@@ -3,13 +3,10 @@
 
 using namespace std;
 
-Computer::Computer()
+Computer::Computer(Brand *_brand, int _ram, float _scrnSize, bool _IsLapTop ):Product(_brand)
 {
     //ctor
-}
-Computer::Computer(int _ram, float _scrnSize, bool _IsLapTop )
-{
-    //ctor
+    //Product::Product(_brand);
     ram = _ram;
     scrnSize = _scrnSize;
     IsLapTop = _IsLapTop;

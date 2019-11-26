@@ -6,8 +6,9 @@
 
 class Freezer : public Product
 {
+    using Product::Product;
+
     public:
-        Freezer();
         virtual ~Freezer();
 
         void turnOnOff ( void );

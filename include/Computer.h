@@ -6,13 +6,14 @@
 
 class Computer : public Product
 {
+    using Product::Product;
+
     public:
         int ram;
         float scrnSize;
         bool IsLapTop;
 
-        Computer();
-        Computer(int _ram, float _scrnSize, bool _IsLapTop );
+        Computer(Brand *_brand, int _ram, float _scrnSize, bool _IsLapTop );
         virtual ~Computer();
 
         void turnOnOff ( void );
