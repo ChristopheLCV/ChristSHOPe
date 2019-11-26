@@ -1,6 +1,6 @@
 #ifndef PRODUCT_H
 #define PRODUCT_H
-
+#include <iostream>
 
 class Product
 {
@@ -8,15 +8,16 @@ class Product
         //
         int id;
         int siz;
-        string model;
+        int price;
+        std::string model;
 
         Product();
         virtual ~Product();
 
-        void turnOnOff ( void );
+        virtual void turnOnOff ( void ) = 0;
 
     protected:
-
+        static int refId;
     private:
 };
 
